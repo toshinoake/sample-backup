@@ -1,0 +1,145 @@
+body {
+  font-family: 'Zen Antique', serif;
+
+}
+
+#midashi {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+#namae {
+  font-size: 1.7rem;
+}
+
+.about-p {
+  text-indent: 1em;
+}
+
+#keireki {
+  font-size: 1.2rem;
+  text-align: justify;
+
+}
+
+
+@media screen and (min-width:992px) {
+
+  #sm_nav {
+    display: none;
+  }
+}
+
+
+.nav_bottom {
+  position: absolute;
+  bottom: 7%;
+  font-size: 20px;
+}
+
+
+/* カルーセル */
+.t_tategaki {
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-rl;
+  font-size: 5rem;
+}
+
+/* 概要 */
+#about {
+  background-image: url(images/背景1.jpg);
+}
+
+.bg_fixed {
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.text_box {
+  font-size: 28px;
+}
+
+/* 作品一覧 */
+#gallery {
+  background-image: url(images/背景（黄）.jpg);
+}
+
+/* プロフィール */
+#profile {
+  background-image: url(images/背景（黒）.jpg);
+}
+
+.bg_sukeru {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* スマホ用レイアウト */
+@media screen and (max-width:991px) {
+
+    /* PC用ナビ非表示 */
+  .nav_ber {
+    display: none !important;
+  }
+
+  .sm_logo {
+    margin-left: 10px;
+  }
+
+
+  /* ハンバーガーボタンがチェック状態である（押されている）とき、閉じるボタン(×)を表示する */
+  #hamburger_btn_check:checked ~ .hamburger_btn .btn_close {
+    display: block;
+  }
+
+  /* ハンバーガーボタンがチェック状態である（押されている）とき、ハンバーガーボタンを表示しない */
+  #hamburger_btn_check:checked ~ .hamburger_btn .btn_open {
+    display: none;
+  }
+
+  /* 最初に表示した時は、閉じるボタン（×）は表示しない */
+  .btn_close {
+    display: none;
+  }
+
+  /* ハンバーガーボタンが押されているかを判断するためのチェックボックスは隠す */
+  #hamburger_btn_check {
+    display: none;
+  }
+
+
+  /* カルーセル */
+  .t_tategaki {
+    font-size: 3rem;
+  }
+
+  .carousel_h {
+    height: 50%;
+  }
+
+  /* 概要欄 */
+  .sh_p0 {
+    padding: 0 !important;
+  }
+
+  .text_box {
+    font-size: 18px;
+  }
+
+  /* ギャラリー */
+  #gallery {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+
+  .c_mb {
+    margin-bottom: 3rem;
+  }
+  
+}

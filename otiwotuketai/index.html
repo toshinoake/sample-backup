@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <title>omoitukanai</title>
+    <meta name="description" content="本当はカルーセルで土→若葉→花みたいなパラパラ漫画っぽくしたかったのですが、その後の項目が思いつきませんでした。">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="sakikawa haruna">
+    <!-- Bootstrapの読み込み　css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrapの読み込み　javasclipt head内にはdefer必要-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer>
+    </script>
+    <!-- フォントどうしよう？ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Zen+Antique&display=swap" rel="stylesheet">
+
+
+    <!-- スタイルシートはBootstrapより後 -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <main class="">
+
+      <!-- スマホ用ナビ -->
+      <div id="sm_nav" class="bg-dark">
+        <div class="d-flex justify-content-between">
+          <a class="navbar-brand my_navbar_brand">
+            <img class="img-fluid sm_logo" src="images/sh-logo.png" alt="サイトアイコン">
+          </a>
+          <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <input type="checkbox" id="hamburger_btn_check">
+            <label for="hamburger_btn_check" class="hamburger_btn">
+              <img class="btn_open" src="images/button-menu.png" alt="ナビゲーションバーのボタン">
+              <img class="btn_close" src="images/button-close.png" alt="ナビゲーションバーのボタン">
+            </label>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item px-2">
+              <a class="nav-link text-white my_nav_link my-2" href="#about">◆概要</a>
+            </li>
+
+            <li class="nav-item px-2">
+              <a class="nav-link text-white my_nav_link my-2" href="#gallery">◆作品一覧</a>
+            </li>
+
+            <li class="nav-item px-2">
+              <a class="nav-link text-white my_nav_link my-2" href="#profile">◆プロフィール</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex"> 
+        <!-- ヘッダーとりあえず、あえて無しで -->
+          <!-- bootstrap　navからコピペ -->
+          <div id="" class="col-lg-2 bg-dark px-2 nav_ber">
+            <div id="midashi" class="col-lg-2 px-2">
+              
+              <a class="navbar-brand col-lg-2 mx-0" href="#"><img class="w-100" src="images/eselogo.png" alt="似非ロゴ"></a>
+              
+              <nav class="nav_bottom p-2">
+                <a class="nav-link text-white" href="#about">◆概要</a>
+                <a class="nav-link text-white" href="#gallery">◆作品一覧</a>
+                <a class="nav-link text-white" href="#profile">◆プロフィール</a>
+              </nav>
+            </div>
+          </div>
+
+          
+      
+        <article class="col-12 col-lg-10">
+          <!-- カルーセル -->
+          <section>
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/手毬.jpg" class="w-100 carousel_h" alt="手毬の写真">
+                  <div class="carousel-caption d-md-block">
+                    <h2 class="t_tategaki">手毬</h2>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/折鶴.jpg" class="w-100 carousel_h" alt="折り鶴の写真">
+                  <div class="carousel-caption d-md-block">
+                    <h2 class="t_tategaki">折り鶴</h2>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/和傘.jpg" class="w-100 carousel_h" alt="和傘の写真">
+                  <div class="carousel-caption d-md-block">
+                    <h2 class="t_tategaki">和傘</h2>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </section>
+          <!-- アバウト -->
+          <section id="about" class="bg_fixed">
+            <div class="container p-5">
+              <h1 class="text-white p-4 text-center">◆概要◆</h1>
+              <div class="row p-5 sh_p0">
+                <div class="text_box">
+                  <p class="text-white about-p">このページは、和風をテーマにして作成しました。<br>今までトップにナビがあるパターンばかり制作していたので、
+                  違うパターンを模索したところ、左側にナビをおいてみました。やってみたいことをとにかく詰め込もうと思い作成しました。<br>
+                  <br>
+                  やってみたかったこと</p>
+                  <ul class="text-white">
+                    <li>Bootstrapのカルーセルとカードを使う</li>
+                    <li>縦書き</li>
+                    <li>背景attachmentを使う</li>
+                    <li>フリー素材を使う</li>
+                  </ul>
+                  <br>
+                  <p class="text-white">反省点・改善点</p>
+                  <ul class="text-white">
+                    <li>カルーセル以外PowerPointっぽく見える</li>
+                    <li>背景を動かさず文字だけが動いてるように見せたかったが、一つの項目が短いせいか画像がシンプルなせいかわかりづらい</li>
+                    <li>徳島県出身なので、藍染・阿波踊りを取り入れたらよかった</li>
+                    <li>試作品のロゴは画像として貼り付けず、「試作品」の文字をstyleで縦書きにして、ひし形のマークだけを風車のように回せばよかった</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </section>
+          <!-- 作品について(ここはカードにする) -->
+          <section id=gallery class="bg_fixed py-5">
+            <h1 class="py-5 text-center">◆作品一覧◆</h1>
+            <div class="container-lg py-5">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card mb-3" style="width: 100%;">
+                    <img src="images/sakuhin1.png" class="card-img-top" alt="教材で作ったsocialtech">
+                    <div class="card-body">
+                      <p class="card-text">HTML/CSSの応用で教材のとおり作ったWebサイト</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card mb-3" style="width: 100%;">
+                    <img src="images/sakuhin2.png" class="card-img-top" alt="教材で作ったwebページ">
+                    <div class="card-body">
+                      <p class="card-text">HTML/CSSの集大成として模写コーディングで作った作品</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card mb-3" style="width: 100%;">
+                    <img src="images/sakuhin3.png" class="card-img-top" alt="教材で作ったwebサイト">
+                    <div class="card-body">
+                      <p class="card-text">Bootstrapを使用して教材のとおり作ったLP</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card mb-3" style="width: 100%;">
+                    <img src="images/sakuhin4.png" class="card-img-top" alt="html/cssの集大成として作ったオリジナルサイト">
+                    <div class="card-body">
+                      <p class="card-text" style="text-align: justify;">HTML/CSSの練習として作った独自で作ったWebサイト</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+          <!-- プロフィール -->
+          <section id="profile" class="bg_fixed p-5">
+            <h1 class="text-center text-white py-5">◆プロフィール◆</h1>
+            <div class="container py-4">
+              <div class="row bg_sukeru">
+                <div class="col-lg-4 text-center border-end mb-4">
+                  <img src="images/アイコン.png" alt="イラスト屋のクローバーのイラスト（自画像代わり）">
+                  <p id="namae">sakikawa</p>
+                </div>
+                <div class="col-lg-8">
+                  <p id="keireki">1985年生まれ。徳島県出身。<br>趣味はゲームとジグソーパズル。ゲームはRPGが主に好きでしたが、最近は謎解き系、パズル系、シミュレーション系が好きです。
+                  最初は医療事務の派遣社員を5年近く務め、次に県職員として10年勤務しました。県職員の総務事務を担当していた際、OA担当も担うこととなり、システム関係のトラブルが起きた時にうまく処理できた時の
+                  感覚が謎解き出来た時の達成感みたいなものを感じたため、IT関係の仕事に就きたいと思いプログラミングの勉強を始めました。</p>
+                </div>
+              </div>
+            </div>
+
+
+          </section>
+        
+          <footer class="bg-dark">
+            <div>
+              <p class="text-white text-center my-0">©sakikawa, All Rights Reserved</p>
+            </div>
+          </footer>
+        </article>  
+      </div>
+      
+    </main>
+  </body>
+</html>
