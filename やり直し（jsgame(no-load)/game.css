@@ -1,0 +1,96 @@
+body {
+  font-size: 6em;
+  text-align: center;
+}
+
+.count {
+  margin: 0;
+  font-weight: bold;
+  color: #888
+}
+
+#title {
+  margin: 0;
+  font-weight: bold;
+  color: #888;
+}
+
+.wrap {
+  padding: 1rem;
+  background-color: #e5e0e0;
+  font-weight: bold;
+  color: #fff;
+}
+
+#gametext {
+  margin: 0;
+}
+
+#gametext1 {
+  margin: 0;
+}
+
+#minbtn { 
+  display: none; 
+ } 
+
+.active {
+  display: block !important;
+}
+
+.btn_circle {
+  width: 150px;
+  height: 150px;
+  margin: 0 10px;
+  padding: 0;
+  border-radius: 50%;
+  border: 0px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, .3);
+  background-color: #bfdbfe;
+  font-size: 45px;
+}
+
+#start {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width:1108px) {
+  #minbtn {
+    padding: 0 15rem;
+  }  
+}
+
+@media screen and (max-width:780px) {
+  body {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .btn_circle {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 0;
+    border-radius: 50%;
+    border: 0px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .3);
+    background-color: #bfdbfe;
+    font-size: 25px;
+  }
+  
+}
+
+/* カラー参考用 */
+#btn1 {
+  background-color: #bfdbfe;
+  background-color: #fbbf24;
+  background-color: #e9d5ff;
+  background-color: #a5f3fc;
+  background-color: #fecaca;
+  background-color: #fef08a;
+  background-color: #d9f99d;
+  background-color: #bbf7d0;
+  background-color: #93c5fd;
+  background-color: #c4b5fd;
+}
+

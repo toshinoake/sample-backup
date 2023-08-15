@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>数字当てゲーム（リロードしていない方）</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="反射神経系のゲーム？最小の数字を押していく数字ゲーム">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+  </head>
+  <body>
+    <p id="count" class="count">60</p>
+    <div id="wrap" class="wrap">
+      <p id="gametext"></p>
+      <p id="gametext1"></p>
+      <span id="timeup"></span>
+      <div id="minbtn">
+        <!-- <button id="btn1" class="btn nambtn btn_circle"></button> -->
+      </div>
+    </div>
+    <audio id="btn_success"><source src="決定ボタンを押す12.mp3" type="audio/mp3"></audio>
+    <audio id="btn_mistake"><source src="ビープ音4.mp3" type="audio/mp3"></audio>
+    <button id="start">スタート</button>
+    <p id="scorecount" class="count"></p>
+    <script type="text/javascript" src="game.js"></script>
+  </body>
+</html>
